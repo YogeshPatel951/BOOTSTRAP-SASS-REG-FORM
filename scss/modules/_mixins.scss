@@ -1,0 +1,31 @@
+@mixin fontStack(){
+    font-family: 'Dancing Script', cursive;
+    line-height: 5px;
+    letter-spacing:1px;
+}
+
+@mixin hoverBorderBtn($radius:20px){
+    border: none;
+    transition: border 0.2s, border-radius 0.5s;
+    &:hover{
+        border: 1px solid black;
+        border-radius: $radius;
+    }
+}
+
+@mixin roundedBorder($radi:10px){
+    -webkit-border-radius: $radi;
+    -o-border-radius: $radi;
+    -moz-border-radius: $radi;
+    -ms-border-radius: $radi;
+    border-radius: $radi;
+}
+
+.btn-basic{
+    border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+

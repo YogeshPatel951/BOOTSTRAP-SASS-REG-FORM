@@ -1,0 +1,19 @@
+
+body{
+    margin: 0px;
+}
+nav{
+
+    padding: 10px;
+    .navbar-brand{
+        font-size: 40px;
+        &:hover{
+        color: #333;
+    }
+    }
+    
+}
+
+nav-item{
+    @include hoverBorderBtn();
+}
